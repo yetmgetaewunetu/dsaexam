@@ -6,7 +6,7 @@ class Stack_using_list:
     def isFull(self):
         return self.stack == self.capacity
     def push(self, val):
-        if isFull(self):
+        if isFull():
             print("the stack is full")
             return
         self.stack.append(val)
