@@ -6,7 +6,7 @@ class Stack_using_list:
     def isFull(self):
         return self.stack == self.capacity
     def push(self, val):
-        if isFull():
+        if self.isFull():
             print("the stack is full")
             return
         self.stack.append(val)
@@ -22,7 +22,7 @@ class Stack_using_list:
     def display(self):
         print(*self.stack)
 
-my = Stack_using_list()
+my = Stack_using_list(5)
 my.pop()
 my.push(2)
 my.push(3)
