@@ -1,8 +1,14 @@
 
 class Stack_using_list:
-    def __init__(self):
+    def __init__(self, size):
         self.stack = []
+        self.capacity = size
+    def isFull(self):
+        return self.stack == self.capacity
     def push(self, val):
+        if isFull(self):
+            print("the stack is full")
+            return
         self.stack.append(val)
     def pop(self):
         if len(self.stack) <= 0:
